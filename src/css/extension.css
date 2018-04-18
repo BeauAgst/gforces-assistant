@@ -80,7 +80,7 @@ input {
 }
 .switchContainer.full-width {
   float: none;
-  padding: 5px 0 0;
+  padding: 8px 0 0;
   width: 100%;
   border: none;
 }
@@ -88,6 +88,10 @@ input {
   width: calc(100% - 120px);
 }
 .switchContainer.has-label .timestamp {
+  float: right;
+  font-size: 12px;
+}
+.switchContainer.has-label .page-id {
   float: right;
   font-size: 12px;
 }
@@ -167,6 +171,7 @@ input {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 2px;
   height: 7px;
@@ -184,6 +189,7 @@ input {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   transition: .25s ease;
   background-color: #BF263C;
@@ -195,12 +201,14 @@ input {
   width: 11px;
   height: 3px;
   -webkit-transform: translate(-25%, -50%) rotate(-45deg);
+      -ms-transform: translate(-25%, -50%) rotate(-45deg);
           transform: translate(-25%, -50%) rotate(-45deg);
 }
 .switch .tick:after {
   width: 3px;
   height: 7px;
   -webkit-transform: translate(-100%, -30%) rotate(-45deg);
+      -ms-transform: translate(-100%, -30%) rotate(-45deg);
           transform: translate(-100%, -30%) rotate(-45deg);
 }
 .switch .cross {
@@ -210,12 +218,14 @@ input {
   width: 12px;
   height: 3px;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
 .switch .cross:after {
   width: 12px;
   height: 3px;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 .switch.checked {
@@ -224,6 +234,7 @@ input {
 .switch.checked .slider {
   left: calc(100% - 3px);
   -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
 .switch.checked .icon:before,
@@ -275,6 +286,7 @@ input {
   padding: 15px 5px;
   width: 360px;
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #fff;
   box-shadow: 2px 3px 8px 0 rgba(42, 48, 55, 0.04), 8px 13px 38px 0 rgba(42, 48, 55, 0.02);
@@ -318,6 +330,7 @@ input {
   padding: 15px;
   width: 70%;
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 3px;
   background: #fff;

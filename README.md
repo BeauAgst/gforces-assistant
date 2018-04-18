@@ -5,7 +5,7 @@ The GForces CSS Assistant is a chrome extension for use by GForces frontend deve
 
 ## Getting set up ##
 
-Ask Beau, or another member of the team to supply you with the chrome store URL.
+Ask Bradley, or another member of the team to supply you with the chrome store URL.
 
 ## Features ##
 
@@ -31,6 +31,7 @@ On V10 Sites (frontend):
 - Dropdown sprite generator
 - Check for links without trailing slashes
 - Check for elements that are overflowing the boundaries of the window
+- Gives you the unique page ID on each given area of a V10 site
 
 
 On V10 Sites (admin):
@@ -52,6 +53,10 @@ Google Chrome
 - Hash, and deployment date & time isn't accurate for sites on the old asset structure
 
 ## Release Notes ##
+
+### 1.0.6
+- Added Page ID area, so you can see what the unique specifier on each given page
+
 ### 1.0.5
 - Tag that was being checked to verify V10 site had been moved **BACK**, breaking auto-login features
 

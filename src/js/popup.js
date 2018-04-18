@@ -32,6 +32,7 @@ const popup = {
                 this.dropdownButton();
                 this.trailingSlashes();
                 this.checkOverflow();
+                this.pageId(data);
             })
             .catch(() => {
                 this.loginFailure();
@@ -162,6 +163,12 @@ const popup = {
                 action: 'checkOverflow',
             });
         });
+    },
+
+    pageId(data) {
+        console.log(data);
+        const theId = Array.from(data.bodyClassList).find(cls => cls.startsWith('id-'));
+        document.querySelector('.page-id').innerHTML = theId;
     },
 
     getDeploy(hostname) {

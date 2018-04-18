@@ -44,10 +44,12 @@ const background = {
             const pageUrl = window.location.hostname;
             const pageHead = document.head.innerHTML;
             const pageDOM = document.body.innerHTML;
+            const bodyClassList = document.body.classList;
             const data = {
                 url: pageUrl,
                 head: pageHead,
                 body: pageDOM,
+                bodyClassList: [...bodyClassList],
             };
 
             return data;
