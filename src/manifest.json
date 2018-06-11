@@ -3,8 +3,8 @@
 	"name": "GForces CSS Assistant",
 	"short_name": "GFA",
 	"description": "Assistant to help with daily GForces CSS tasks",
-	"author": "Beau August",
-	"version": "1.0.5",
+	"author": "Bradley Arnott",
+	"version": "1.0.7",
 
 	"icons": { 
 		"210": "img/icon.png" 

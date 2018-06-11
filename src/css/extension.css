@@ -348,3 +348,107 @@ input {
   display: inline-block;
   padding: 0 10px;
 }
+html.dark {
+  background: #2d3035;
+  color: #fff;
+}
+html.dark body {
+  border-bottom: none;
+}
+html.dark .gforcesHeader .title {
+  color: #fff;
+}
+html.dark .options {
+  color: #fff;
+}
+html.dark .button .btn {
+  background: #4fc5d8;
+}
+html.dark .button .btn:hover {
+  background: #2cb2c8;
+}
+html.dark .button.frontend .btn {
+  background: #ef7159;
+}
+html.dark .button.frontend .btn:hover {
+  background: #eb492a;
+}
+html.dark .switch {
+  background: #ef412c;
+}
+html.dark .switch.checked {
+  background: #48e5a3;
+}
+.input-switch {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+}
+.input-switch * {
+  cursor: pointer;
+}
+.input-switch label {
+  font-size: 12px;
+  font-weight: bold;
+}
+.input-switch .input {
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+}
+.input-switch .input + .switch {
+  position: relative;
+  height: 10px;
+  width: 60px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+  background-color: #6a717d;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+}
+.input-switch .input + .switch:before,
+.input-switch .input + .switch:after {
+  content: "";
+  position: absolute;
+  transition: .35s;
+}
+.input-switch .input + .switch:before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #2d3035;
+}
+.input-switch .input + .switch:after {
+  left: 5px;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: none;
+  background-color: #5c626c;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 1;
+}
+.input-switch .input + .switch:hover:after {
+  -webkit-transform: translateY(-50%) scale(1.1);
+      -ms-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
+}
+.input-switch .input:checked + .switch {
+  background-color: #ffffff;
+}
+.input-switch .input:checked + .switch:before {
+  width: calc(95%);
+  background-color: #eaeaea;
+}
+.input-switch .input:checked + .switch:after {
+  left: calc(75%);
+  background-color: #ffffff;
+}

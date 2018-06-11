@@ -1,0 +1,94 @@
+
+@primary-color: #2d3035;
+@primary-color-dark: darken( @primary-color, 10%);
+@primary-color-tint: lighten(@primary-color, 20%);
+@secondary-color: #eaeaea;
+@secondary-color-dark: darken( @secondary-color, 10%);
+@secondary-color-tint: lighten( @secondary-color, 20%);
+
+.input-switch {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+
+    * {
+        cursor: pointer;
+    }
+
+    label {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .input {
+        position: absolute;
+        opacity: 0;
+        z-index: 10;
+
+        + .switch {
+            position: relative;
+            height: 10px;
+            width: 60px;
+            margin-right: 15px;
+            margin-left: 15px;
+            border-radius: 10px;
+            background-color: lighten(@primary-color-tint, 6%);
+            vertical-align: middle;
+            display: inline-block;
+            cursor: pointer;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                transition: .35s;
+            }
+
+            &:before {
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 20%;
+                border-radius: 10px;
+                background-color: @primary-color;
+            }
+
+            &:after {
+                left: 5px;
+                top: 50%;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: none;
+                background-color: @primary-color-tint;
+                transform: translateY(-50%);
+                opacity: 1;
+            }
+
+            &:hover {
+
+                &:after {
+                    transform: translateY(-50%) scale(1.1);
+                }
+            }
+        }
+
+        &:checked {
+
+            + .switch {
+                background-color: lighten(@secondary-color-tint, 10%);
+
+                &:before {
+                    width: calc(100% - 5px);
+                    background-color: @secondary-color;
+                }
+
+                &:after {
+                    left: calc(100% - (20px + 5px));
+                    background-color: @secondary-color-tint;
+                }
+            }
+        }
+    }
+}

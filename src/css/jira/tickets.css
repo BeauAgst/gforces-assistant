@@ -99,7 +99,15 @@ table td {
 #gadget-72010-chrome .dashboard-item-title,
 #gadget-72011-chrome .dashboard-item-title,
 #gadget-73000-chrome .dashboard-item-title,
-#gadget-77814-chrome .dashboard-item-title {
+#gadget-77814-chrome .dashboard-item-title,
+#gadget-79400-chrome .dashboard-item-title,
+#gadget-74502-chrome .dashboard-item-title,
+#gadget-93405-chrome .dashboard-item-title,
+#gadget-93404-chrome .dashboard-item-title,
+#gadget-93401-chrome .dashboard-item-title,
+#gadget-93402-chrome .dashboard-item-title,
+#gadget-93403-chrome .dashboard-item-title,
+#gadget-93400-chrome .dashboard-item-title {
   font-size: 0;
 }
 #gadget-11706-chrome .dashboard-item-title:before,
@@ -147,7 +155,15 @@ table td {
 #gadget-72010-chrome .dashboard-item-title:before,
 #gadget-72011-chrome .dashboard-item-title:before,
 #gadget-73000-chrome .dashboard-item-title:before,
-#gadget-77814-chrome .dashboard-item-title:before {
+#gadget-77814-chrome .dashboard-item-title:before,
+#gadget-79400-chrome .dashboard-item-title:before,
+#gadget-74502-chrome .dashboard-item-title:before,
+#gadget-93405-chrome .dashboard-item-title:before,
+#gadget-93404-chrome .dashboard-item-title:before,
+#gadget-93401-chrome .dashboard-item-title:before,
+#gadget-93402-chrome .dashboard-item-title:before,
+#gadget-93403-chrome .dashboard-item-title:before,
+#gadget-93400-chrome .dashboard-item-title:before {
   font-size: 12px;
 }
 #gadget-71902-chrome .dashboard-item-title:before,
@@ -160,13 +176,11 @@ table td {
 #gadget-72011-chrome .dashboard-item-title:before {
   margin-left: 30px;
 }
-#gadget-11706-chrome .dashboard-item-title:before,
 #gadget-69203-chrome .dashboard-item-title:before {
   content: "CSS Work Queue";
 }
 #gadget-61800-chrome .dashboard-item-title:before,
-#gadget-69212-chrome .dashboard-item-title:before,
-#gadget-77814-chrome .dashboard-item-title:before {
+#gadget-69212-chrome .dashboard-item-title:before {
   content: "CSS Large Tickets";
 }
 #gadget-54825-chrome .dashboard-item-title:before,
@@ -201,7 +215,6 @@ table td {
 #gadget-69211-chrome .dashboard-item-title:before {
   content: "My Work";
 }
-#gadget-11703-chrome .dashboard-item-title:before,
 #gadget-69210-chrome .dashboard-item-title:before {
   content: "Quotes";
 }
@@ -221,10 +234,10 @@ table td {
   content: "JD Sign Off";
 }
 #gadget-61805-chrome .dashboard-item-title:before {
-  content: "CSS Project Builds";
+  content: "CSS Project Queue";
 }
 #gadget-61815-chrome .dashboard-item-title:before {
-  content: "CSS QA";
+  content: "CSS QA / Scope Change / International Queue";
 }
 #gadget-61809-chrome .dashboard-item-title:before {
   content: "CSS Migration Builds";
@@ -232,8 +245,39 @@ table td {
 #gadget-62000-chrome .dashboard-item-title:before {
   content: "CSS Migration Builds QA";
 }
-#gadget-73000-chrome .dashboard-item-title:before {
+#gadget-73000-chrome .dashboard-item-title:before,
+#gadget-93401-chrome .dashboard-item-title:before {
   content: "Third Party Code Approval";
+}
+#gadget-11706-chrome .dashboard-item-title:before {
+  content: "CSS Ticket Queue";
+}
+#gadget-77814-chrome .dashboard-item-title:before {
+  content: "CSS Large Ticket Queue";
+}
+#gadget-79400-chrome .dashboard-item-title:before {
+  content: "CSS Third Party Approval";
+}
+#gadget-11703-chrome .dashboard-item-title:before {
+  content: "Ticket Quotes";
+}
+#gadget-74502-chrome .dashboard-item-title:before {
+  content: "What’s In Progress";
+}
+#gadget-93405-chrome .dashboard-item-title:before {
+  content: "Scope Change Quotes";
+}
+#gadget-93404-chrome .dashboard-item-title:before {
+  content: "Project Quotes";
+}
+#gadget-93402-chrome .dashboard-item-title:before {
+  content: "CSS Enterprise QA";
+}
+#gadget-93403-chrome .dashboard-item-title:before {
+  content: "CSS Project Large Tickets";
+}
+#gadget-93400-chrome .dashboard-item-title:before {
+  content: "Internal Work";
 }
 #gadget-71901-renderbox .dashboard-item-header:after,
 #gadget-71902-renderbox .dashboard-item-header:after,

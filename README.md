@@ -54,6 +54,9 @@ Google Chrome
 
 ## Release Notes ##
 
+### 1.0.7
+- Added jira styles for the project dashboard and a button to easily reach the top navigation backend of V10
+
 ### 1.0.6
 - Added Page ID area, so you can see what the unique specifier on each given page
 

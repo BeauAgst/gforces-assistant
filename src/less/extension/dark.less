@@ -1,0 +1,46 @@
+html {
+
+    &.dark {
+        background: #2d3035;
+        color: #fff;
+
+        body {
+            border-bottom: none;
+        }
+
+        .gforcesHeader .title {
+            color: #fff;
+        }
+
+        .options {
+            color: #fff;
+        }
+
+        .button {
+
+            .btn {
+                background: #4fc5d8;
+
+                &:hover {
+                    background: darken(#4fc5d8, 10%);
+                }
+            }
+
+            &.frontend .btn {
+                background: #ef7159;
+
+                &:hover {
+                    background: darken(#ef7159, 10%);
+                }
+            }
+        }
+
+        .switch {
+            background: #ef412c;
+
+            &.checked {
+                background: #48e5a3;
+            }
+        }
+    }
+}

@@ -32,7 +32,8 @@ const popup = {
                 this.dropdownButton();
                 this.trailingSlashes();
                 this.checkOverflow();
-                this.pageId(data);
+                this.getPageId(data);
+                this.darkTheme();
             })
             .catch(() => {
                 this.loginFailure();
@@ -165,10 +166,32 @@ const popup = {
         });
     },
 
-    pageId(data) {
-        console.log(data);
+    getPageId(data) {
         const theId = Array.from(data.bodyClassList).find(cls => cls.startsWith('id-'));
         document.querySelector('.page-id').innerHTML = theId;
+    },
+
+    darkTheme() {
+        var cb = document.getElementById('darkThemeCheck');
+        var page = document.getElementById('pageWrap');
+        
+        var checked = function(bool) {
+            if (bool) {
+                page.setAttribute('class', 'dark');
+                localStorage.setItem('checkedDark', true);
+            } else {
+                page.removeAttribute('class', 'dark');
+                localStorage.removeItem('checkedDark');
+            }
+        }
+        
+        cb.addEventListener('change', function () {
+            checked(cb.checked);
+        }); 
+        
+        cb.checked = localStorage.getItem('checkedDark');
+        checked(localStorage.getItem('checkedDark'));
+
     },
 
     getDeploy(hostname) {
